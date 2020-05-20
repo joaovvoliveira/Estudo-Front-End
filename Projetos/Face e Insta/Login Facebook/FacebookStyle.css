@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+.center{
+    width: 1080px;
+    height: auto;
+    min-width: 400px;
+    margin: 0 auto;
+}
+.clear{
+    clear: both;
+}
+header{
+    padding: 10px 0;
+    height: 70px;
+    background-color: royalblue;
+    animation-name: color_1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+header .logo{
+    font-family: 'Jost', sans-serif;
+    float: left;
+    font-size: 22px;
+    color: snow;
+    animation-name: logo_1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+header .login{
+    float: right;
+}
+.login .textbox-user, .login .textbox-senha{
+    display: inline-block;
+    color: snow;
+    margin-right: 10px;
+}
+.login .textbox-user{
+    position: relative;
+    top: -22px;
+}
+.esqueceusenha{
+    padding-top: 5px;
+    font-size: 12px;
+}
+.login button{
+    position: relative;
+    top: -22px;
+    background-color: dodgerblue;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    padding: 6px 4px;
+}
+.main .banner{
+    width: 60%;
+    float: left;
+}
+.main .banner h4{
+    font-size: 22px;
+    color: midnightblue;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.main .abrir-conta{
+    width: 40%;
+    margin-right: -4px;
+    float: right;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.main .abrir-conta h2{
+    color: darkslategray;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+.main .abrir-conta h4{
+    color: slategrey;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.w50{
+    width: 50%;
+    display: inline-block;
+    margin-right: -4px;
+}
+.w50 input[type="text"]{
+    padding: 8px 5px;
+    width: calc(100% - 8px);
+    margin-bottom: 10px;
+}
+.w100{
+    width: 100%;
+}
+.w100 input[type="email"]{
+    width: calc(100% - 8px);
+    padding: 8px 5px;
+    margin-bottom: 10px;
+}
+.w100 input[type="password"]{
+    width: calc(100% - 8px);
+    padding: 8px 5px;
+    margin-bottom: 20px;
+}
+.abrir-conta .nascimento h3{
+    font-size: 16px;
+    margin-bottom: 6px;
+    color: cornflowerblue;    
+}
+.abrir-conta .nascimento select{
+    padding: 6px 4px;
+}
+.abrir-conta .sexo{
+    margin-top: 20px;
+}
+.abrir-conta .sexo .check h2{
+    display: inline-block;
+    font-size: 14px;
+}
+.abrir-conta .sexo .check{
+    margin-right: 10px;
+    display: inline;
+}
+.abrir-conta .sexo h3{
+    font-size: 16px;
+    margin-bottom: 6px;
+    color: cornflowerblue;    
+}
+.BtnCadastrar{
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: forestgreen;
+    font-weight: bold;
+    border-radius: 20px;s
+}
+@keyframes color_1{
+    0%{
+        background-color: royalblue;
+    }
+    25%{
+        background-color: darkblue;
+    }
+    50%{
+        background-color: royalblue;
+    }
+    75%{
+        background-color: darkblue;
+    }
+    100%{
+        background-color: royalblue;
+    }
+}
+@keyframes logo_1{
+    0%{
+        color: #171716;
+    }
+    25%{
+        color: snow;
+    }
+    50%{
+        color: #171716;
+    }
+    75%{
+        color: snow;
+    }
+    100%{
+        color: #171716;
+    }
+}

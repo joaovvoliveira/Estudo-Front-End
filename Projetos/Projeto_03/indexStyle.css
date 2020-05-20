@@ -1,0 +1,108 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+body{
+	background-color: #f4f4f4;
+}
+.container{
+	width: 1080px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+header{
+	background-color: #232020;
+}
+header > .cabecalho{
+	float: left;
+	font-size: 20px;
+	padding-left: 20px;
+	color: #F8F8FF;
+}
+header > .menu{
+	float: right;
+	text-align: right;
+}
+header > .menu li{
+	display: inline-block;
+	padding: 10px 30px;
+	font-size: 18px;
+}
+ul li a{
+	text-decoration: none;
+	color: #F8F8FF;
+}
+ul li a:hover{
+	text-decoration: underline;
+}
+.clear{clear: both;}
+
+.info{
+	background-color: #3a3535;
+	height: 140px;
+	color: #F8F8FF;
+}
+.info > h2{
+	width: 100%;
+	text-align: center;
+	padding-top: 30px;
+}
+.info > h3{
+	width: 100%;
+	text-align: center;
+}
+.cursos{
+	width: 100%;
+	height: auto;
+}
+.w33{
+	width: 33.3%;
+	margin-right: -4px;
+	text-align: center;
+	display: inline-block;
+	border: 1px solid #ccc;
+}
+
+.w33 > h3{
+	font-size: 20px;
+	font-weight: bold;
+}
+.w33 > h4{
+	font-family:
+	font-size: 14px;
+}
+.imgs img{
+	width: 90%;
+	margin: 15px;
+}
+
+.imgs > input[type=submit]{
+	background-color: #ff7315;
+	margin: 10px 0;
+	font-size: 18px;
+	font-weight: bolder;
+	color: #232020;
+	width: 50%;
+	height: 40px;
+}
+.w50{
+	width: 50%;
+}
+.noticias > h2{
+	width: 100%;
+	float: left;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.depoimentos > h2{
+	width: 100%;
+	float: right;
+	text-align: center;
+	padding-top: 30px;
+}
+.depoimentos{
+	margin-right: -4%;
+}

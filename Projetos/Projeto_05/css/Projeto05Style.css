@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.clear{
+    clear: both;
+}
+
+.exercicio{
+    margin: 0 auto;
+    color: snow;
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+.center{
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+header{
+    background-color: #ffd8a6 ;
+    width: 100%;
+    height: auto;
+}
+header .logo{
+    float: left;
+}
+header .logo img{
+    height: 80px;
+}
+header .menu{
+    float: right;
+}
+.blue{
+    color: aqua;
+}
+header .menu ul li{
+    padding-left: 40px;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 8%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+header .menu ul li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.principal .bg{
+    background-image: url("imagens/wpp2.jpg");
+    background-position: bottom;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+
+.principal .formulario{
+    width: 300px;
+    height: calc(100% + 26px);
+    float: right;
+    background-color: rgba(69,56,49,0.8);
+    border: 3px solid #1b0b08;
+    margin-right: 30px;
+    position: relative;
+    top: -13px;
+    z-index: 2;
+}
+.principal .formulario .text-form{
+    width: 100%;
+    padding: 8% 20px;
+    font-size: 22px;
+    background-color: #1b0b08;
+    opacity: 0.9;
+    text-align: center;
+    height: 90px;
+    margin-bottom: 3px solid #1b0b08;
+}
+.principal .formulario .text-form p{
+    color: #fc8210;
+    opacity: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.principal .formulario .dados p{
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 20px 0 4px 20px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #fc8210;
+}
+.principal .formulario .dados input{
+    margin-left: 20px;
+    padding: 3px 10px;
+    border-radius: 10px;
+    width: 80%;
+}
+#obg{
+    margin-top: -8px;
+    margin-bottom: 20px;
+}
+.principal .formulario .dados input[type="submit"]{
+    background-color: #fc8210;
+    border: 1px solid #1b0b08;
+    padding: 8px 0;
+    font-size: 16px;
+    box-shadow: 4px 4px 10px black;
+    cursor: pointer;
+}
+article{
+    clear: both;
+    position: relative;
+    top: -26px;
+    width: 100%;
+    height: 160px;
+    background-color: #fc8210;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #1b0b08;
+    text-align: center;
+    padding-top: 20px;
+    z-index: 1;
+}
+article h2{
+    width: 60%;
+    margin: 0 auto;
+    font-size: 28px;
+}
+article p{
+    width: 60%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.fotos{
+    position: relative;
+    top: -26px;
+}
+.text-fotos{
+    padding: 30px 30px;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #1b0b08;
+    width: 30%;
+    color: #fc8210;
+}
+.foto1{
+    background-image: url('./imagens/wpp2.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 70%;
+}
+.foto2{
+    /* background-image: url('imagens/foto2.jpg'); */
+    background-position: center;
+    background-size: cover;
+    width: 70%;
+    flex-direction: column-reverse;
+}
+.foto3{
+    background-image: url('imagens/foto3.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 70%;
+}
+.parte1, .parte2, .parte3{
+    display: flex;
+    height: 200px;
+}
+.parte2{
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width:768px){
+    header .logo{
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin-bottom: -60px;
+    }
+    header .menu{
+         width: 100%;
+         text-align: center;
+         padding-bottom: 40px;
+    }
+    .principal .formulario{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        float: none;
+        height: 400px;
+        transform: translate(-50%,-50%);
+    }
+    .info article h2, .info article p{
+        width: 100%;
+        padding: 0 20px;
+    }
+}

@@ -1,0 +1,163 @@
+*{
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+.clear{
+	clear: both;
+}
+.center{
+	max-width: 1180px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+header{
+	padding: 10px 0;
+	background-color: #1b2a49;
+}
+header > .center {
+	display: flex;
+}
+
+.logo{
+	color: #c9d1d3;
+	font-size: 22px;
+	width: 50%;
+}
+.menu{
+	text-align: right;
+	width: 50%;
+}
+.menu ul{
+list-style-type: none;
+}
+.menu li {
+	margin-right: 18px;
+	font-size: 16px;
+	display: inline-block;
+}
+.menu a{
+	color: #c9d1d3;
+}
+section.texto{
+	background-color: #465881;
+	padding: 30px 0;
+	text-align: center;
+	color: #c9d1d3;
+}
+section.texto h2, section.texto h3{
+	font-weight: normal;
+}
+section.texto h3 > b, section.texto h2 > b{
+	color: #9aceff;
+}
+
+section.cursos{
+	padding: 30px 0;
+}
+section.cursos > .center{
+	display: flex;
+	flex-wrap: wrap;
+}
+.box{
+	border: 1px solid #465881;
+	height: 100%;
+}
+.box > img{
+	max-width: 100%;
+}
+
+.box-wraper{
+	width: 33.3%;
+	padding: 30px 20px;
+}
+
+.box h2 {
+	text-align: center;
+	padding: 0 8px;
+	color: #1b2a49;
+	font-size: 20px;
+}
+
+.box p {
+	color: #1b2a49;
+	padding: 8px;
+	font-size: 14px;
+}
+.box-wraper a{
+	background-color: #00909e;
+	text-align: center;
+	display: block;
+	padding: 8px 6px;
+	color: #1b2a49;
+	width: 100%;
+	font-size: 20px;
+}
+.w50{
+	width: 50%;
+	float: left;
+	padding: 0 15px;
+}
+.w50 h1{
+	font-size: 26px;
+	font-weight: normal;
+	color: #1b2a49;
+	margin-bottom: 20px;
+}
+
+section.news {
+	padding: 20px 0;
+	border-bottom: 1px dotted #1b2a49;
+}
+
+.box-news h2{ 
+	font-size: 22px;
+	font-weight: bold;
+	color: #1b2a49;
+	padding: 8px 0;
+}
+.box-news{
+	border-bottom: 1px dotted #1b2a49;
+}
+.box-news p{
+	font-size: 18px;
+	font-weight: normal;
+	color: #1b2a49;	
+	padding-bottom: 12px;
+}
+
+.depoiments ul {
+	list-style-position: inside;
+}
+.depoiments li{
+	margin-bottom: 8px;
+	font-size: 18px;
+	color: #1b2a49;
+}
+footer{
+	padding: 20px 0;
+	background: #00909e;
+	color: #1b2a49;
+}
+
+@media screen and (max-width: 768px){
+	.box-wraper{
+		width: 50%;
+	}
+}
+@media screen and (max-width: 580px){
+	.box-wraper{
+		width: 100%;
+	}
+	.news{
+		width: 100%;
+	}
+	.depoiments{
+		margin-top: 10px;
+		width: 100%;
+	}
+}

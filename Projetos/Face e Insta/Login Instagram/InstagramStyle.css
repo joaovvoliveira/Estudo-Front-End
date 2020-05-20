@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.space{
+    height: 16px;
+}
+.center{
+    width: 840px;
+    margin: 0 auto;
+}
+.img{
+    width: 60%;
+    float: left;
+}
+.Acesso{
+    position: relative;
+    left: -40px;
+    width: 40%;
+    margin-top: 60px;
+    float: right;
+    margin-right: -4px;
+    border: 1px solid #ccc;
+    height: 400px;
+}
+div.Acesso h2{
+    text-align: center;
+    font-size: 44px;
+    padding-top: 20px;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 40px;
+}
+
+div.Acesso input[type="text"],div.Acesso input[type="password"]{
+    padding: 10px 6px;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+.Acesso button{
+    width: 80%;
+    display: block;
+    padding: 8px;
+    text-align: center;
+    color: snow;
+    background-color: lightskyblue;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+}
+.Acesso h4{
+    text-align: center;
+    margin: 20px 0;
+    color: slategray;
+    font-family: 'Hind', sans-serif;
+}
+#p1{
+    color: slategray;
+    float: left;
+    margin-left: 40px;
+    position: relative;
+    top:-50px;
+}
+#p2{
+    color: slategray;
+    float: right;
+    margin-right: 40px;
+    position: relative;
+    top:-50px;
+}
+.Acesso h3{
+    text-align: center;
+    font-family: 'Hind', sans-serif;
+    font-size: 15px;
+    color: mediumblue;
+    cursor: pointer;
+}
+.NpConta{
+    position: relative;
+    left: -40px;
+    float: right;
+    width: 40%;
+    margin-right: -4px;
+    border: 1px solid #ccc;
+    padding: 10px 0;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Hind', sans-serif;
+}
+.NpConta h2 b{
+    color: rebeccapurple;
+    cursor: pointer;
+}

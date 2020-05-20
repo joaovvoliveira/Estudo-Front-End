@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulário UI|UX</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		body{
+			background-color: #ccc;
+		}
+		.container{
+			max-width: 960px;
+			margin: 0 auto;
+			padding: 0 2%;
+		}
+
+		section.formulario{
+			padding: 90px 0;
+		}
+		.form-group input[type=text]{
+			width: 100%;
+			height: 30px;
+			border: 1px solid #ccc;
+			padding-left: 10px;
+			margin-bottom: 10px;
+		}
+		.form-group textarea{
+			width: 100%;
+			height: 120px;
+			border: 1px solid #ccc;
+			padding: 10px;
+			resize: vertical;
+		}
+		.form-group input[type=submit]{
+			width: 120px;
+			margin-top: 12px;
+			cursor: pointer;
+			height: 34px;
+			background-color: #0080FF;
+			border-radius: 20px;
+			border: 1px solid white;
+		}
+		.form-group span{
+			color:red;
+			padding: 4px 0;
+		}
+	</style>
+</head>
+<body>
+	<section class="formulario">
+		<div class="container">
+			<form>
+				<div class="form-group">
+					 <span></span>
+					 <input type="text" name="nome" placeholder="Nome">
+				</div>
+				<div class="form-group">
+					 <span></span>
+					 <input type="text" name="tel" placeholder="Telefone">
+				</div>
+				<div class="form-group">
+					 <span></span>
+					 <textarea placeholder="Observação" name="texto"> </textarea>
+				</div>
+				<div class="form-group">
+					 <span></span>
+					 <input type="submit" name="Enviar" value="Enviar !">
+				</div>
+			</form>
+		</div>
+	</section>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(function(){
+			$('form').submit(function(){
+				
+				var nome = $('[name=nome]').val();
+				var tel = $('[name=tel]').val();
+				var mensagem = $('[name=texto]').val();
+				resertForm();
+				if(nome == ''){
+					var el = $('[name=nome]');
+					el.parent().find('span').html('Insira seu nome:');
+					el.css('border','2px solid red');
+				}
+				if(tel == ''){
+					var el = $('[name=tel]');
+					el.parent().find('span').html('Insira seu telefone:');
+					el.css('border','2px solid red');
+				}
+				return false;
+			})
+			function resetform(){
+				$('input[type=text],textarea').css('border','1px solid #ccc');
+				$('span').html('');
+			}
+		})
+	</script>
+</body>
+</html>
