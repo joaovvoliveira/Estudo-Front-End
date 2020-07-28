@@ -1,0 +1,2 @@
+Foi feito primeiro um Wireframe no Figma, de todas as páginas, e o desenvolvimento foi feito, baseado no Wireframe.
+Um site responsível através de Media Queries, para venda de bicicletas, com páginas de Sobre, Produto, Portfólio e Contato.

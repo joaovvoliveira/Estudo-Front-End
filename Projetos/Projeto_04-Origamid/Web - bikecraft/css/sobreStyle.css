@@ -1,0 +1,153 @@
+.conheca-sobre .subtitulo:after,
+.sobre-qualidade .subtitulo::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 8px auto;
+  background-color: var(--cor-branca);
+}
+
+/* CONHEÇA SOBRE */
+section.conheca-sobre h2 {
+  color: var(--cor-branca);
+}
+
+section.conheca-sobre {
+  text-align: center;
+  padding: 20px 0;
+  color: var(--cor-branca);
+  margin-top: 92px;
+  background: url(../img/bg-sobre.jpg);
+  background-size: cover;
+}
+
+.sobre-equipe {
+  padding-top: 40px;
+}
+.sobre-equipe .subtitulo {
+  text-align: left;
+}
+.sobre-equipe .subtitulo:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--cor-preta);
+  margin: 6px 0 12px 0;
+}
+.sobre-historia p {
+  font-size: 18px;
+  line-height: 26px;
+  padding: 12px 0;
+}
+.sobre-valores ul li {
+  font-size: 18px;
+  padding: 12px 0;
+}
+.img-sobre img {
+  width: 100%;
+  height: auto;
+  margin: 20px 0 40px 0;
+}
+
+/**** Qualidade Sobre ****/
+
+.sobre-qualidade {
+  width: 100%;
+  position: relative;
+  background-color: var(--cor-preta);
+  text-align: center;
+}
+.sobre-qualidade .subtitulo,
+.sobre-qualidade ul li {
+  color: var(--cor-branca);
+  text-align: center;
+  padding: 40px 40px;
+}
+.sobre-qualidade h3 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+}
+.sobre-qualidade img {
+  margin: 0 auto;
+}
+.sobre-qualidade:after {
+  content: "";
+  background: url("../img/linhasbrancas.png") no-repeat center;
+  display: block;
+  width: 852px;
+  height: 124px;
+  margin: 0 auto;
+  position: absolute;
+  text-align: center;
+  top: 196px;
+  right: 216px;
+}
+.sobre-qualidade li h3:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 8px auto;
+  background-color: var(--cor-branca);
+}
+
+/***** FOOTER SOBRE *****/
+
+.footer {
+  width: 100%;
+  background-color: var(--cor-branca);
+  color: var(--cor-preta);
+  padding: 40px 0;
+}
+
+.footer h3 {
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--cor-amarelo);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+.footer h3:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--cor-amarelo);
+  margin: 6px 0 12px 0;
+}
+.footer .footer_historia {
+  padding-right: 40px;
+}
+
+.footer_contato ul li {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.footer_redes ul li {
+  display: inline-block;
+}
+.footer_redes ul li a {
+  border: 3px solid var(--cor-amarelo);
+  display: block;
+  padding: 6px;
+  margin-right: 10px;
+}
+.footer_redes ul li a:hover {
+  border-color: var(--cor-branca);
+}
+.copy {
+  background-color: var(--cor-amarelo);
+  height: 60px;
+  padding-top: 20px;
+  width: 100%;
+  text-align: left;
+}

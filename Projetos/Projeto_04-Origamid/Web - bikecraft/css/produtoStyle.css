@@ -1,0 +1,183 @@
+.subtitulo:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 8px auto;
+  background-color: var(--cor-branca);
+}
+
+.sobre-produtos .subtitulo::before,
+.sobre-produtos .subtitulo::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 8px auto;
+  background-color: var(--cor-amarelo);
+}
+.orcamento .subtitulo:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 8px auto;
+  background-color: var(--cor-preta);
+}
+
+/* Conheca Produtos */
+section.conheca-produtos h2 {
+  color: var(--cor-branca);
+}
+
+.sobre-produtos .subtitulo {
+  color: var(--cor-amarelo);
+  padding-top: 60px;
+}
+
+section.conheca-produtos {
+  text-align: center;
+  padding: 20px 0;
+  color: var(--cor-branca);
+  margin-top: 92px;
+  background: url(../img/bg-produtos.jpg);
+  background-size: cover;
+}
+.esporte-txt,
+.passeio-txt,
+.retro-txt {
+  margin-top: 20px;
+  height: 200px;
+  background-color: var(--cor-preta);
+}
+
+.esporte-img,
+.passeio-img,
+.retro-img,
+.esporte-img2,
+.passeio-img2,
+.retro-img2 {
+  margin-top: 20px;
+  height: 200px;
+  background-color: yellow;
+}
+.esporte-img {
+  background: url(../img/produtos/bikcraft-esporte-1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.esporte-img2 {
+  background: url(../img/produtos/bikcraft-esporte-2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.passeio-img {
+  background: url(../img/produtos/bikcraft-passeio-1.jpg);
+  background-size: cover;
+}
+.passeio-img2 {
+  background: url(../img/produtos/bikcraft-passeio-2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.retro-img {
+  background: url(../img/produtos/bikcraft-retro-2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.retro-img2 {
+  background: url(../img/produtos/bikcraft-retro-1.jpg);
+  background-size: cover;
+}
+
+.esporte-sobre,
+.passeio-sobre,
+.retro-sobre {
+  margin-top: 20px;
+  height: 200px;
+  background-color: var(--cor-preta);
+  color: var(--cor-branca);
+}
+.sobre-produtos p {
+  padding: 24px;
+}
+
+.carac-esporte,
+.carac-passeio,
+.carac-retro {
+  width: 100%;
+}
+
+.wrapper {
+  grid-template-columns: 2fr 2fr;
+  display: grid;
+}
+.wrapper li {
+  border: 1px solid #000;
+  background-color: var(--cor-amarelo);
+  text-align: center;
+  color: var(--cor-preta);
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+/* ORCAMENTO */
+
+.orcamento {
+  margin-top: 20px;
+  padding: 40px 0;
+  background-color: var(--cor-amarelo);
+}
+.orcamento h2 {
+  padding-bottom: 20px;
+}
+.orcamento form {
+  margin-left: 40px;
+}
+.orcamento form p {
+  font-size: 18px;
+  font-family: arial, sans;
+  padding: 6px;
+}
+textarea {
+  display: block;
+}
+.orcamento form input {
+  width: 250px;
+  padding: 4px 8px;
+  font-size: 14px;
+}
+input[type="submit"] {
+  height: 30px;
+  width: 100px !important;
+  border: none;
+  margin: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--cor-preta);
+  color: var(--cor-amarelo);
+}
+
+.monte-Bikcraft h3 {
+  font-size: 24px;
+}
+.monte-Bikcraft h4 {
+  font-size: 20px;
+  padding: 20px 0 10px 0;
+}
+
+.monte-Bikcraft ul li {
+  font-size: 18px;
+  padding: 4px 10px;
+}
+
+.monte-Bikcraft ul li:nth-child(2n - 1) {
+  background-color: var(--cor-branca);
+}
+.monte-Bikcraft p {
+  font-size: 16px;
+  font-family: arial;
+  padding: 4px 0;
+}
