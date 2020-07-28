@@ -1,0 +1,1 @@
+Projeto desenvolvido como exercício da plataforma DankiCode, apenas com HTML e CSS.

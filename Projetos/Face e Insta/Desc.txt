@@ -1,0 +1,1 @@
+Projeto apenas com a tela de Login das 2 plataformas, como exercício de fixação.
