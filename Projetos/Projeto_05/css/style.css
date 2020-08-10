@@ -1,0 +1,408 @@
+/* Padrões Gerais */
+
+:root{
+  --cor-1: #ADEEE3;
+  --cor-2: #81171B;
+  --cor-3: #63B995;
+  --cor-4: #C75146;
+  --cor-5: #AD2E24;
+}
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.titulo::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--cor-4);
+  margin: 8px auto;
+}
+.subtitulo:after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: var(--cor-4);
+  margin: 8px auto;
+}
+  
+
+/* Inicio Header */
+
+.header{
+  font-size: 12px;
+  background-color: var(--cor-5)
+}
+.header img{
+  width:14px;
+}
+.header .phone, .header .mail, .header .localization{
+  padding: 14px;
+}
+.header span{
+  padding: 0 0 0 10px;
+}
+
+/* Seção Logo e Navegação */
+.headerInicial{
+  background-color: var(--cor-2)
+}
+
+.headerInicial img {
+  float: left;
+  width: 60px;
+  padding: 12px 0;
+}
+.headerInicial nav {
+  float: right;
+  margin-top: 32px;
+}
+.headerInicial nav ul li{
+  display: inline;
+  padding-left: 50px;
+  font-size: 18px;
+  margin: 6px 4px;
+}
+.headerInicial nav ul li:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Home e Produtos */
+.home{
+  padding: 8px 0 16px 0;
+  background: url(../img/bgHome.svg) no-repeat;
+  background-size:cover;
+}
+.titulo{
+  font-size: 32px;
+  text-align: center;
+}
+.sobre{
+  padding: 50px 0;
+}
+.sobre .textoSobre span{
+  font-size:24px;
+  padding-left: 10px;
+}
+.sobre .textoSobre p{
+  font-size:16px;
+  letter-spacing: 0.1em;
+  line-height: 24px;
+}
+.textoSobre p:nth-child(odd){
+  margin: 20px 0;
+}
+.sobre .imgSobre img{
+  width:100%;
+  border-radius: 20px;
+}
+.produtos{
+  background-color: var(--cor-2);
+}
+.produtos{
+  padding-top:1px;
+}
+.produtos .lista-produtos{
+  height: 240px;
+  background-color: var(--cor-4);
+}
+.produtos .lista-produtos:nth-child(6){
+  background-color: white;
+  font-size: 80px;
+  padding-top: 80px;
+}
+.produtos .img-produtos img{
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+  margin-bottom: 20px;
+}
+.auxBtn{
+  text-align:center;
+}
+.produtos button{
+  margin: 30px 0;
+}
+.app{
+  padding-top: 24px;
+  position: relative;
+}
+.app .col-1{
+  display: inline;
+  float: left;
+}
+.app .col-1 img{
+  display:block;
+  width:60px;
+}
+.app .col-1 span{
+  font-size: 24px;
+  letter-spacing: 0.1em;
+}
+.app .col-1 ul li{
+  margin: 20px 0;
+  font-size: 14px;
+}
+.app .col-img{
+  position: absolute;
+  bottom: -25px;
+  left: 320px;
+}
+.app .col-img img{
+  width: 400px;
+}
+.app .col-links{
+  float: right;
+  width:300px;
+}
+.app .col-links button{
+  display: block;
+  padding: 4px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.app .col-links p{
+  font-size:18px;
+  text-align: center;
+  margin: 30px 0;
+}
+.compartilhamentos{
+  background-color: var(--cor-2);
+  padding-bottom: 30px;
+}
+.compartilhamentos .titulo{
+  padding-top:20px;
+}
+.compartilhamentos .lista-compart{
+  height: 100px;
+  background-color: var(--cor-4)
+}
+.compartilhamentos p{
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+.footer{
+  padding: 30px 0;
+  background-color: var(--cor-5);
+}
+.footer .footer-logo img{
+  display: block;
+  margin-bottom: 40px;
+}
+
+.footer .footer-logo span, .footer ul li{
+  font-size: 14px;
+}
+.footer .footer-logo span{
+  font-size: 10px;
+}
+
+.footer p{
+  font-size:22 px;
+  margin-bottom: 10px;
+}
+.footer p{
+  letter-spacing: 0.1em;
+}
+.footer ul li{
+  font-size: 14px;
+  line-height:21px;
+}
+
+.footer .footer-sociais ul li{
+  display: inline;
+  margin-top: 20px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+.app span strong{
+  color: var(--cor-4)
+}
+
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+  .header img{
+    display: block;
+    margin: 0 auto;
+    width: 18px;
+    padding-bottom: 10px;
+  }
+  .header .localization span{
+    margin: 0 auto;
+    text-align:center;
+  }
+
+  .headerInicial{
+    height: auto;
+    display: block;
+  }
+  .sobre{
+    padding: 20px 0;
+  }
+
+  .sobre .imgSobre img{
+    margin-top: 40px;
+  }
+
+  .headerInicial img {
+    width: 80px;
+    margin: 0 auto;
+    display: block;
+    float:none;
+  }
+
+  .headerInicial nav{
+    float: none;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0 auto;
+  }
+  .footer .footer-sociais ul li{
+    display: block;
+    margin-top: 20px;
+    margin-right: 8px;
+    float: left;
+  }
+  .app .col-img img{
+    display:none;
+  }
+  .container {
+    width: 768px;
+  }
+  .grid-1 {
+      width: 28px;
+  }
+  .grid-2 {
+      width: 76px;
+  }
+  .grid-3 {
+      width: 124px;
+  }
+  .grid-4 {
+      width: 172px;
+  }
+  .grid-5 {
+      width: 220px;
+  }
+  .grid-6 {
+      width: 268px;
+  }
+  .grid-7 {
+      width: 316px;
+  }
+  .grid-8 {
+      width: 364px;
+  }
+  .grid-9 {
+      width: 412px;
+  }
+  .grid-10 {
+      width: 460px;
+  }
+  .grid-11 {
+      width: 508px;
+  }
+  .grid-12 {
+      width: 556px;
+  }
+  .grid-13 {
+      width: 604px;
+  }
+  .grid-14 {
+      width: 652px;
+  }
+  .grid-15 {
+      width: 700px;
+  }
+  .grid-16 {
+      width: 748px;
+  }
+  .grid-1-3 {
+      width: 236px;
+  }
+}
+
+@media only screen and (max-width: 787px) {
+  .header img{
+    display: block;
+    margin: 0 auto;
+    width: 20px;
+    padding-bottom: 10px;
+  }
+  .header .phone img{
+    padding-top: 0;
+  }
+  .header .mail img, .header .localization img{
+    margin-top:-30px;
+    margin-bottom: -4px;    
+  }
+  .header .localization{
+    margin-bottom: -6px;
+  }
+  .header span{
+    display: block;
+    padding: 0;
+    float: none;
+    text-align:center;
+  }
+  .headerInicial img {
+    width: 70px;
+    margin: 0 auto;
+    display: block;
+    float:none;
+    margin-bottom: -20px;
+  }
+  .headerInicial nav {
+    float: none;
+    text-align: center;
+  }
+  .headerInicial nav ul li{
+    display: block;
+    padding-left: 0;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    line-height: 26px;
+  }
+  .produtos .img-produtos img{
+    display: none;
+  }
+  .footer .footer-logo img{
+  margin: 0 auto;  
+  }
+  .footer{
+    text-align: center;
+  }
+  .footer .footer-sociais{
+    margin: 0 auto;
+  }
+  .app .col-img img{
+    display:none;
+  }
+  .container {
+      width: 300px;
+  }
+  .grid-1,
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .grid-5,
+  .grid-6,
+  .grid-7,
+  .grid-8,
+  .grid-9,
+  .grid-10,
+  .grid-11,
+  .grid-12,
+  .grid-13,
+  .grid-14,
+  .grid-15,
+  .grid-16,
+  .grid-1-3 {
+      width: 300px;
+      margin: 0 0 20px;
+      float: none;
+  }
+}
