@@ -1,0 +1,54 @@
+section.conheca-portfolio h2 {
+  color: var(--cor-branca);
+}
+
+.sobre-porftfolio .subtitulo {
+  color: var(--cor-amarelo);
+  padding-top: 60px;
+}
+
+section.conheca-portfolio {
+  text-align: center;
+  padding: 20px 0;
+  color: var(--cor-branca);
+  margin-top: 92px;
+  background: url(../img/bg-portfolio.jpg);
+  background-size: cover;
+}
+.quoteCliente {
+  padding: 30px;
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+}
+.quoteCliente p {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+.quoteCliente cite {
+  font-size: 24px;
+  font-style: italic;
+}
+
+.itens-portfolio {
+  background-color: var(--cor-preta);
+  padding: 40px;
+}
+
+.itens-portfolio .item-retro {
+  background: url(../img/portfolio/retro.jpg) no-repeat center;
+  background-position: center;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.itens-portfolio .item-passeio {
+  background: url(../img/portfolio/passeio.jpg) no-repeat center;
+  background-position: center;
+  height: 200px;
+}
+.itens-portfolio .item-esporte {
+  background: url(../img/portfolio/esporte.jpg) no-repeat center;
+  height: 200px;
+  background-position: center;
+}
