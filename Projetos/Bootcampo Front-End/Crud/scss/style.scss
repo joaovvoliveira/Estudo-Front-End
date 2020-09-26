@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+/* Cores */
+
+$cor-primaria: #204580;
+$cor-secundaria: #4089ff;
+$cor-texto: #e3eeff;
+$cor-perigo: rgb(153, 26, 26);
+$font-Principal: "PT Sans", sans-serif;
+
+/* Mixins */
+@mixin titulo {
+  font-size: 32px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: $font-Principal;
+}
+@mixin texto {
+  font-family: $font-Principal;
+  font-size: 20px;
+  margin: 10px 0;
+  line-height: 1.5em;
+}
+@mixin botao {
+  @include texto;
+  width: 44px;
+  list-style: none;
+  background-color: $cor-perigo;
+  border: 2px solid $cor-texto;
+  font-weight: 500;
+  color: $cor-texto;
+}
+
+body {
+  background-color: $cor-secundaria;
+}
+
+h1 {
+  @include titulo;
+  text-align: center;
+}
+.textos {
+  @include texto;
+}
+
+.inputs {
+  text-align: center;
+}
+
+input[type="text"] {
+  @include texto;
+  padding: 4px 6px;
+  width: 200px;
+}
+
+input[type="submit"] {
+  @include botao;
+}
+.botao {
+  @include botao;
+}
+
+ul li {
+  @include texto;
+  list-style: none;
+}
+ul li span {
+  margin-left: 12px;
+}
+.clicavel {
+  cursor: pointer;
+}

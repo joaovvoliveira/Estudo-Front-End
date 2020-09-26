@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+/* Cores */
+/* Mixins */
+/* line 33, ../../../xampp/htdocs/FrontEnd/Projetos/Bootcampo Front-End/Crud/scss/style.scss */
+body {
+  background-color: #4089ff;
+}
+
+/* line 37, ../../../xampp/htdocs/FrontEnd/Projetos/Bootcampo Front-End/Crud/scss/style.scss */
+h1 {
+  font-size: 32px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
+  text-align: center;
+}
+
+/* line 41, ../../../xampp/htdocs/FrontEnd/Projetos/Bootcampo Front-End/Crud/scss/style.scss */
+.textos {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  margin: 10px 0;
+  line-height: 1.5em;
+}
+
+/* line 45, ../../../xampp/htdocs/FrontEnd/Projetos/Bootcampo Front-End/Crud/scss/style.scss */
+.inputs {
+  text-align: center;
+}
+
+/* line 49, ../../../xampp/htdocs/FrontEnd/Projetos/Bootcampo Front-End/Crud/scss/style.scss */
+input[type="text"] {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  margin: 10px 0;
+  line-height: 1.5em;
+  padding: 4px 6px;
+  width: 200px;
+}
+
+/* line 55, ../../../xampp/htdocs/FrontEnd/Projetos/Bootcampo Front-End/Crud/scss/style.scss */
+input[type="submit"] {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  margin: 10px 0;
+  line-height: 1.5em;
+  width: 44px;
+  list-style: none;
+  background-color: #991a1a;
+  border: 2px solid #e3eeff;
+  font-weight: 500;
+  color: #e3eeff;
+}
+
+/* line 58, ../../../xampp/htdocs/FrontEnd/Projetos/Bootcampo Front-End/Crud/scss/style.scss */
+.botao {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  margin: 10px 0;
+  line-height: 1.5em;
+  width: 44px;
+  list-style: none;
+  background-color: #991a1a;
+  border: 2px solid #e3eeff;
+  font-weight: 500;
+  color: #e3eeff;
+}
+
+/* line 62, ../../../xampp/htdocs/FrontEnd/Projetos/Bootcampo Front-End/Crud/scss/style.scss */
+ul li {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  margin: 10px 0;
+  line-height: 1.5em;
+  list-style: none;
+}
+
+/* line 66, ../../../xampp/htdocs/FrontEnd/Projetos/Bootcampo Front-End/Crud/scss/style.scss */
+ul li span {
+  margin-left: 12px;
+}
+
+/* line 69, ../../../xampp/htdocs/FrontEnd/Projetos/Bootcampo Front-End/Crud/scss/style.scss */
+.clicavel {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
