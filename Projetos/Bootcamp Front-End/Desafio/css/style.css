@@ -3,4 +3,19 @@
 }
 .checkboxes {
   margin: 0 auto;
+  text-align: center;
+}
+
+.option {
+  margin: 10px;
+}
+
+.lista {
+  margin-top: 20px;
+}
+
+.display {
+  display: inline-block;
+  margin: 20px;
+  width: 14rem;
 }

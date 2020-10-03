@@ -1,48 +1,94 @@
-window.addEventListener("load", () => {
-  innerDevs();
-});
+const globalState = {
+  allDevs: [],
+  filteredDevs: [],
+  loadingData: true,
+  checkJava: true,
+  checkJavascript: true,
+  checkPython: true,
+  radioAnd: true,
+  radioOr: false,
+};
 
-function render() {}
+async function start() {
+  globalListaDevs = document.querySelector("#listaDevs");
+  globalInptBusca = document.querySelector("#inptBusca");
+  globalCheckJava = document.querySelector("#ckeckboxJava");
+  globalCheckJavascript = document.querySelector("#ckeckboxJavascript");
+  globalCheckPython = document.querySelector("#checkboxPython");
+  globalRadioAnd = document.querySelector("#radioAnd");
+  globalRadioOr = document.querySelector("#radioOr");
+
+  qtdDevs = document.querySelector("#qtdDevs");
+
+  await innerDevs();
+
+  globalInptBusca.addEventListener("input", inputChange);
+
+  globalCheckJava.addEventListener("input", checkBoxClick);
+  globalCheckJavascript.addEventListener("input", checkBoxClick);
+  globalCheckPython.addEventListener("input", checkBoxClick);
+
+  globalCheckRadioAnd.addEventListener("input", checkRadioClick);
+  globalCheckRadioOr.addEventListener("input", checkRadioClick);
+
+  filterDevs();
+}
 
 async function innerDevs() {
   const json = await fetch("http://localhost:3001/devs");
   const devs = await json.json();
-  listDevs = devs.map((dev) => {
+  allDevs = devs.map((dev) => {
     const {
       age,
       name,
       picture,
       programmingLanguages: [{ language, experience }],
     } = dev;
+    const lowerCaseName = name.localeLowerCase();
     return {
-      name,
-      age,
-      picture,
-      language,
-      experience,
+      ...dev,
+      searchName: removeAccentMarksFrom(lowerCaseName)
+        .split("")
+        .filter((char) => char !== " ")
+        .join(""),
+      onlyLanguages: getOnlyLanguagesFrom(programmingLanguages),
     };
   });
-  console.log(listDevs);
 
-  const filterDevs = listDevs.filter((dev) => {
-    return dev.experience.toLowerCase() !== "junior";
+  render();
+}
+
+function render() {
+  renderDevs();
+  renderBuscas();
+}
+
+function renderDevs() {
+  let devsHTML = "<div>";
+  allDevs.forEach((dev) => {
+    const { age, name, picture, language, experience } = dev;
+    const devHTML = `
+    <div class="card display">
+    <img src="${picture}" class="card-img-top" alt="${name}">
+    <div class="card-body">
+      <h5 class="card-title">${name}</h5>
+      <p class="card-text">${language} - ${experience}</p>
+    </div>
+  </div>
+    `;
+    devsHTML += devHTML;
   });
-  console.log(filterDevs);
+  listaDevs.innerHTML = devsHTML;
+}
 
-  const doForEach = listDevs;
+function renderBuscas() {
+  function buscaDevs(event) {
+    const filtrados = allDevs.filter((dev) => {
+      const { age, name, picture, language, experience } = dev;
+      return name === event.target.value;
+    });
+  }
 
-  doForEach.forEach((dev) => {
-    (dev.nameSize = dev.name.length), (dev.novaIdade = dev.age - 10);
-  });
-  console.log(doForEach);
-
-  const doReduce = listDevs.reduce((acc, cur) => {
-    return acc + cur.age;
-  }, 0);
-  console.log(doReduce);
-
-  const doFind = listDevs.find((dev) => {
-    return dev.age === 53;
-  });
-  console.log(doFind);
+  inptBusca.addEventListener("keyup", buscaDevs);
+  qtdDevs.textContent = allDevs.length;
 }
